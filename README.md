@@ -48,9 +48,30 @@ The setup script runs unattended for the most part, but there are a few places w
 * The VMware Player install will ask you to accept two EULAs.
 * VMware Player will ask you if you want it to check for updates on startup and if you want to share runtime information to help them improve the product. Respond according to your preferences. If you own a license for VMware you can enter it when prompted; otherwise, just press Enter. The unlicensed version is for personal use only.
 * Dropbox will pop up a window offering you a tour of the product. Respond as you wish. 
+* yEd will ask you where to install. Respond as you wish.
 
 The last thing the setup script does is to run a script named verify that checks to see if the packages and applications were installed as expected. Check the console output at the end of the run to see if there is anything you need to deal with manually. You can run verify separately any time you wish.
 
 After these steps are done you can remove directory provision-vm-host-ubuntu.
 
+## Changes to base install
 
+Packages added:
+
+* Cairo Dock
+* Aptitude
+* OpenSSH
+* MS Core Fonts
+* Yakuake
+* Sublime Text
+
+Applications added:
+
+* Dropbox client
+* VMware Player
+* yEd
+
+Packages removed:
+
+* Empathy
+* Thunderbird
