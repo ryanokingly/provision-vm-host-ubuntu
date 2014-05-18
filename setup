@@ -29,6 +29,15 @@ git clone "git://github.com/neopragma/$COMMON_DIR"
 
 echo
 echo '============================================================='
+echo 'Removing unwanted packages...'
+
+sudo apt-get -y -f remove \ 
+    thunderbird \
+    empathy \
+
+
+echo
+echo '============================================================='
 echo 'Verifying the configuration...'
 
 chmod +x verify 
