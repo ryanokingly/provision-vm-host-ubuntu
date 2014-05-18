@@ -62,6 +62,7 @@ Packages added:
 * Aptitude
 * OpenSSH
 * MS Core Fonts
+* Gimp
 * Yakuake
 * Sublime Text
 
