@@ -1,0 +1,40 @@
+#!/bin/bash
+#===============================================================================
+# Configure this instance to be a "base" desktop config of Ubuntu with
+# VMware Player installed to support project-specific or client-specific VMs.
+# Start with a fresh install of Ubuntu with git installed.
+#
+# Version: 1.0.0
+# Date: 18 May 2014
+# Author: Dave Nicolette
+#===============================================================================
+INSTALL_DIR="$HOME/provision-vm-host-ubuntu"
+COMMON_DIR="provision-ubuntu-common"
+
+echo
+echo '============================================================='
+echo 'Provisioning this system as a base desktop environment'
+
+git clone "git://github.com/neopragma/$COMMON_DIR"
+
+"./$COMMON_DIR/ubuntu_update"
+"./$COMMON_DIR/install_build_support"
+"./$COMMON_DIR/install_aptitude"
+"./$COMMON_DIR/install_openssh"
+"./$COMMON_DIR/install_mscorefonts"
+"./$COMMON_DIR/install_yakuake"
+"./$COMMON_DIR/install_sublime_text_3"
+"./$COMMON_DIR/install_dropbox"
+"./$COMMON_DIR/install_vmware"
+
+echo
+echo '============================================================='
+echo 'Verifying the configuration...'
+
+chmod +x verify 
+./verify
+
+
+
+
+
