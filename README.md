@@ -1,4 +1,4 @@
-# provision-vm-host-ubuntu-12.04.3-fluxbox
+# provision-vm-host-ubuntu
 
 Provision an instance of Ubuntu Desktop to serve as a base environment for consulting work and a host platform for running VMs. 
 
