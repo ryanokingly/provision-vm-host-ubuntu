@@ -23,6 +23,7 @@ pkg[${#pkg[@]}]='ttf-mscorefonts-installer'
 pkg[${#pkg[@]}]='openssh-client'
 pkg[${#pkg[@]}]='openssh-server'
 pkg[${#pkg[@]}]='alsamixer'
+pkg[${#pkg[@]}]='cairo-dock'
 
 for name in "${pkg[@]}"
 do
