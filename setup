@@ -42,6 +42,13 @@ sudo apt-get -y -f remove \
 
 echo
 echo '============================================================='
+echo 'Tweaking the desktop configuration to enhance usability...'
+
+"./$COMMON_DIR/ubuntu_desktop_tweaks"
+
+
+echo
+echo '============================================================='
 echo 'Verifying the configuration...'
 
 chmod +x verify 
